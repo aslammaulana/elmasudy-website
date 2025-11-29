@@ -4,20 +4,23 @@ import Image from "next/image";
 import db from "@/data/images/gallery.json";
 import { gallery } from "@/models/gallery";
 import { useState } from "react";
-import {  HiChevronLeft, HiChevronRight } from "react-icons/hi2";
+import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 import { IoClose } from "react-icons/io5";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const GalleryGrid = () => {
   const [selectedImg, setSelectedImg] = useState<number>(0);
   const [imgPop, setImgPop] = useState<boolean>(false);
+  const [loadingList, setLoadingList] = useState<boolean[]>(
+    Array(db.gallery.length).fill(true)
+  );
 
-  const swipeImg = (moveType: "prv" | "nxt") => {
-    if (moveType === "prv") {
+  const swipeImg = (move: "prv" | "nxt") => {
+    if (move === "prv") {
       if (selectedImg === 0) setSelectedImg(db.gallery.length - 1);
       else setSelectedImg(selectedImg - 1);
     }
-
-    if (moveType === "nxt") {
+    if (move === "nxt") {
       if (selectedImg === db.gallery.length - 1) setSelectedImg(0);
       else setSelectedImg(selectedImg + 1);
     }
@@ -35,12 +38,25 @@ const GalleryGrid = () => {
             }}
             className="relative cursor-pointer group"
           >
+            {loadingList[i] && (
+              <Skeleton className="w-full h-64 rounded-md" />
+            )}
+
             <Image
               src={`/images/gallery/${loc.img}`}
               alt={loc.location}
               width={300}
               height={250}
-              className="w-full h-64 object-cover"
+              className={`w-full h-64 object-cover transition-opacity ${
+                loadingList[i] ? "opacity-0" : "opacity-100"
+              }`}
+              onLoadingComplete={() =>
+                setLoadingList((prev) => {
+                  const updated = [...prev];
+                  updated[i] = false;
+                  return updated;
+                })
+              }
             />
 
             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity"></div>
@@ -59,7 +75,7 @@ const GalleryGrid = () => {
 
           <button
             onClick={() => swipeImg("prv")}
-            className="bg-green rounded-full ml-2 hover:translate-x-2 transition-all cursor-pointer text-[#ffffffc9]"
+            className="rounded-full ml-2 hover:translate-x-2 transition-all cursor-pointer text-[#ffffffc9]"
           >
             <HiChevronLeft className="w-10 h-10 md:w-16 md:h-16" />
           </button>
@@ -79,7 +95,7 @@ const GalleryGrid = () => {
 
           <button
             onClick={() => swipeImg("nxt")}
-            className="bg-green rounded-full mr-2 hover:-translate-x-2 transition-all cursor-pointer text-[#ffffffc9]"
+            className="rounded-full mr-2 hover:-translate-x-2 transition-all cursor-pointer text-[#ffffffc9]"
           >
             <HiChevronRight className="w-10 h-10 md:w-16 md:h-16" />
           </button>
@@ -89,7 +105,9 @@ const GalleryGrid = () => {
               <button
                 key={i}
                 onClick={() => setSelectedImg(i)}
-                className={`hover:-translate-y-2 transition-all cursor-pointer ${selectedImg === i ? "-translate-y-2" : ""}`}
+                className={`hover:-translate-y-2 transition-all cursor-pointer ${
+                  selectedImg === i ? "-translate-y-2" : ""
+                }`}
               >
                 <Image
                   src={`/images/gallery/${loc.img}`}
