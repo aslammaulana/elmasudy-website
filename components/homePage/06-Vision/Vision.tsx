@@ -7,7 +7,7 @@ const Vision = () => {
 
 
     return (
-        <section className="relative w-full px-5 py-8 text-white overflow-hidden mt-0">
+        <section className="relative w-full px-5 py-8 text-white overflow-hidden mt-0 md:mt-20">
             {/* Content */}
             <div className="relative w-[100%] md:w-[87%] p-2 md:p-0 mx-auto flex flex-col md:flex-row items-start justify-between gap-10 py-10 md:py-0">
 
@@ -29,14 +29,15 @@ const Vision = () => {
 
                     <div className="border-l-[25px] h-7 pl-5  border-[#fbc102] ">
                         <p className="text-[15px] font-semibold text-[#253c56]  font-lato ">
-                            ABOUT US
+                            VISION
                         </p>
                     </div>
 
                     {/* Context */}
                     <div className="flex flex-col justify-start items-start pt-5">
                         <p className="text-[28px] md:text-[38px] text-left font-extrabold text-[#253c56] font-lato uppercase leading-tight mb-[-20px] md:mb-[0px]">
-                            GREAT HISTORY OF OUR institution
+                            OUR GREAT VISION &
+MISSION
                         </p>
                         <div className="w-full py-10 flex justify-left">
                             <div

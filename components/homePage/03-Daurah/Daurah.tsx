@@ -2,6 +2,9 @@
 
 import Image from "next/image"
 import Link from "next/link"
+import { motion } from "framer-motion"
+import { easeOut } from "framer-motion"
+
 
 const items = [
   {
@@ -24,11 +27,41 @@ const items = [
   }
 ]
 
+// Animasi container
+const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.18
+    }
+  }
+}
+
+// Animasi setiap card
+const fadeItem = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: easeOut }
+  }
+}
+
 export default function DaurahSection() {
 
   return (
     <section className="w-full pb-12 pt-6">
-      <div className="mx-auto w-[90%] md:w-[80%] grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-3 md:gap-10 justify-items-center">
+      <motion.div
+        className={`mx-auto w-[90%] md:w-[80%] mx-auto w-[90%] md:w-[80%] grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-3 md:gap-10 justify-items-center
+            ? "flex justify-center gap-10 flex-wrap"
+            : "grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-10"
+        }`}
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         {items.map((item, i) => (
           <div
             key={i}
@@ -61,7 +94,7 @@ export default function DaurahSection() {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
 
     </section>
   )
