@@ -1,0 +1,36 @@
+{
+  "gallery": [
+    {
+      "img": "Elmasudy-Gallery-1-min.jpg",
+      "location": "Gallery 1"
+    },
+    {
+      "img": "Elmasudy-Gallery-2-min.jpg",
+      "location": "Gallery 2"
+    },
+    {
+      "img": "Elmasudy-Gallery-3-min.jpg",
+      "location": "Gallery 3"
+    },
+    {
+      "img": "Elmasudy-Gallery-4-min.jpg",
+      "location": "Gallery 4"
+    },
+    {
+      "img": "Elmasudy-Gallery-5-min.jpg",
+      "location": "Gallery 5"
+    },
+    {
+      "img": "Elmasudy-Gallery-8-min.jpg",
+      "location": "Gallery 8"
+    },
+    {
+      "img": "Elmasudy-Gallery-9-min.jpg",
+      "location": "Gallery 9"
+    },
+    {
+      "img": "Elmasudy-Gallery-10-min.jpg",
+      "location": "Gallery 10"
+    }
+  ]
+}
