@@ -1,17 +1,10 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useState } from "react";
-import { FaHeadset } from "react-icons/fa";
-import { heroBackground } from "@/data/images/heroImages";
-import SectionHeader from "../00-SectionHeader/SectionHeader";
-import SvgDivider from "@/components/elements/SvgDivider";
 
 const AboutUs = () => {
-    const contactUrl = "https://wa.me/6281234567890";
     const logoSrc = "/images/profile/Elmasudy1.jpg";
 
-    const [bgLoaded, setBgLoaded] = useState(false);
 
     return (
         <section className="relative w-full px-5 py-10 text-white overflow-hidden">
@@ -46,11 +39,11 @@ const AboutUs = () => {
                     </div>
                     <div className="border-l-3 border-[#fbc102] pl-8 ">
                         <p className=" text-[15px] text-[#898989] font-lato leading-relaxed">
-                            LT3Q El-Mas'udy adalah lembaga pendidikan Islam yang berfokus pada pembelajaran Al-Quran dan hadits. Lembaga ini bertujuan untuk membantu umat Islam dalam memahami dan mengamalkan ajaran Islam secara sistematis dan konsisten. Kami menawarkan program pendidikan berkualitas yang meliputi pengajaran membaca Al-Quran (tahfidz dan tahsin), pemahaman Al-Quran (tafsir), dan hadits.
+                            LT3Q El-Mas&apos;udy adalah lembaga pendidikan Islam yang berfokus pada pembelajaran Al-Quran dan hadits. Lembaga ini bertujuan untuk membantu umat Islam dalam memahami dan mengamalkan ajaran Islam secara sistematis dan konsisten. Kami menawarkan program pendidikan berkualitas yang meliputi pengajaran membaca Al-Quran (tahfidz dan tahsin), pemahaman Al-Quran (tafsir), dan hadits.
                             <br /><br />
-                            Selain program pendidikan rutin, kami juga menawarkan program daurah, yang bertujuan untuk meningkatkan kecintaan dan pemahaman umat Islam terhadap Al-Quran dan hadits. Program daurah ini dilakukan secara rutin dan berkala, dengan materi yang berbeda setiap kali pelaksanaannya. Selain itu, kami juga mengadakan acara-acara islami lainnya, seperti pengajian, seminar, dan kegiatan sosial.
+                            Selain program pendidikan rutin, kami juga menawarkan program daurah, yang bertujuan untuk meningkatkan kecintaan dan pemahaman umat Islam terhadap Al-Qur&apos;an dan hadits. Program daurah ini dilakukan secara rutin dan berkala, dengan materi yang berbeda setiap kali pelaksanaannya. Selain itu, kami juga mengadakan acara-acara islami lainnya, seperti pengajian, seminar, dan kegiatan sosial.
                             <br /><br />
-                            Dengan visi dan misi yang kuat, serta program dan fasilitas yang berkualitas, LT3Q El-Mas'udy siap memberikan kontribusi positif bagi umat Islam dalam memahami dan mengamalkan ajaran Islam secara konsisten dan benar.
+                            Dengan visi dan misi yang kuat, serta program dan fasilitas yang berkualitas, LT3Q El-Mas&apos;udy siap memberikan kontribusi positif bagi umat Islam dalam memahami dan mengamalkan ajaran Islam secara konsisten dan benar.
                         </p>
                     </div>
                 </div>

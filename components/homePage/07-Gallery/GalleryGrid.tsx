@@ -4,7 +4,7 @@ import Image from "next/image";
 import db from "@/data/images/gallery.json";
 import { gallery } from "@/models/gallery";
 import { useState } from "react";
-import { HiXCircle, HiChevronLeft, HiChevronRight } from "react-icons/hi2";
+import {  HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 import { IoClose } from "react-icons/io5";
 
 const GalleryGrid = () => {

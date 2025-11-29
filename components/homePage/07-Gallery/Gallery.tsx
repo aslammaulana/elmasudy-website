@@ -1,5 +1,4 @@
 "use client";
-import React, { useState } from "react";
 import GalleryGrid from "./GalleryGrid";
 
 const Gallery = () => {

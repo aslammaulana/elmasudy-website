@@ -9,8 +9,6 @@ const Hero = () => {
   const contactUrl = "https://wa.me/6281234567890";
   const logoSrc = "/images/core/hero-section.png";
 
-  const [bgLoaded, setBgLoaded] = useState(false);
-
   return (
     <section className="relative w-full px-5 py-10 text-white overflow-hidden">
       {/* Background Wrapper */}
@@ -43,12 +41,12 @@ const Hero = () => {
             Lembaga Tarbiyyah Islamiyah
           </p>
           <h1 className="text-[30px] md:text-[55px] font-extrabold font-lato uppercase leading-tight mb-[-20px] md:mb-[0px]">
-            Pusat Kajian Tahsin, Tahfidz & Tafsir Al Qur'an
+            Pusat Kajian Tahsin, Tahfidz & Tafsir Al Qur&apos;an
           </h1>
           <div className="border-l-3 border-[#daaf22] pl-5 ">
             <p className="leading-relaxed text-[15px] text-gray-200">
               Bimbingan Tarbiyyah Islamiyyah Terbaik Buat Kamu.
-              Yukk Belajar Mendalami Luasnya Ilmu Al-Qur'an dari Dasar hingga Lanjutan Bersama Kami.
+              Yukk Belajar Mendalami Luasnya Ilmu Al-Qur&apos;an dari Dasar hingga Lanjutan Bersama Kami.
 
               Daftar Sekarang!
             </p>

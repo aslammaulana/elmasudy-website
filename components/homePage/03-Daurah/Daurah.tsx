@@ -25,7 +25,6 @@ const items = [
 ]
 
 export default function DaurahSection() {
-  const isLessThanFour = items.length < 4
 
   return (
     <section className="w-full pb-12 pt-6">

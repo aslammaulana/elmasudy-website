@@ -1,4 +1,3 @@
-import SvgDivider from '@/components/elements/SvgDivider'
 import SectionHeader from '@/components/homePage/00-SectionHeader/SectionHeader'
 import Hero from '@/components/homePage/01-HeroSection/Hero'
 import AdvantageSection from '@/components/homePage/02-AdvantageSection/Advantage'
@@ -16,7 +15,7 @@ export default function page() {
     <div>
       <Navbar />
       <Hero />
-      <div className=" w-[100%]  mx-auto h-3  bg-[#21466d79]"></div>
+      <div className=" w-full  mx-auto h-3  bg-[#21466d79]"></div>
       <AdvantageSection />
       <SectionHeader title="Program Daurah RAMADHAN" />
       <DaurahSection />

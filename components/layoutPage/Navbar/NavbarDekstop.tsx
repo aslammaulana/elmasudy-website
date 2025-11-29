@@ -4,12 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { navLinks } from "./NavLink";
-import { FaHeadset } from 'react-icons/fa';
 
 export default function NavbarDekstop() {
   const logoSrc = "/images/core/elmasudy-logo.svg";
-  const title = "Aslam Travel";
-  const contactUrl = "https://wa.me/6282298304077";
 
   const [visible, setVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);

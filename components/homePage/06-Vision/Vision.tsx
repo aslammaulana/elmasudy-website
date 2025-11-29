@@ -1,18 +1,10 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
-import React, { useState } from "react";
-import { FaHeadset } from "react-icons/fa";
-import { heroBackground } from "@/data/images/heroImages";
-import SectionHeader from "../00-SectionHeader/SectionHeader";
-import SvgDivider from "@/components/elements/SvgDivider";
 import VisionCard from "./VisionCard";
 
 const Vision = () => {
-    const contactUrl = "https://wa.me/6281234567890";
     const logoSrc = "/images/profile/Elmasudy2.jpg";
 
-    const [bgLoaded, setBgLoaded] = useState(false);
 
     return (
         <section className="relative w-full px-5 py-10 text-white overflow-hidden mt-20">

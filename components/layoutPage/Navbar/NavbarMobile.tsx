@@ -14,10 +14,7 @@ export default function NavbarMobile() {
         setIsClick(!isClick);
     };
 
-    // Fungsi baru: Menutup navbar setelah navigasi
-    const closeNavbar = (): void => {
-        setIsClick(false);
-    };
+    
 
     const logoSrc = "/images/core/elmasudy-logo.svg";
 
