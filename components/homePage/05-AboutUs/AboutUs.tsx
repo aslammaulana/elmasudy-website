@@ -7,7 +7,7 @@ const AboutUs = () => {
 
 
     return (
-        <section className="relative w-full px-5 py-10 text-white overflow-hidden">
+        <section className="relative w-full px-5 py-8 text-white overflow-hidden">
             {/* Content */}
             <div className="relative w-[100%] md:w-[87%] p-2 md:p-0 mx-auto flex flex-col-reverse md:flex-row items-start justify-between gap-10 py-10 md:py-0">
                 {/* Kolom kiri */}
@@ -56,7 +56,7 @@ const AboutUs = () => {
                             alt="Elmasudy Hero"
                             width={600}
                             height={600}
-                            className="object-contain w-auto max-w-[100%] md:max-w-[100%] h-auto pl-10"
+                            className="object-contain w-auto max-w-[100%] md:max-w-[100%] h-auto mb-10 md:mb-0 pl-0 md:pl-10"
                             priority
                         />
                     </div>

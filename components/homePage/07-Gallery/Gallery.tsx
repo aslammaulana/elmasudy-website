@@ -5,13 +5,13 @@ const Gallery = () => {
 
 
     return (
-        <section className="relative w-full px-5 py-10 text-white overflow-hidden mt-20">
+        <section className="relative w-full px-5 py-10 text-white overflow-hidden mt-0">
             {/* Content */}
             <div className="relative w-[100%] md:w-[87%] p-2 md:p-0 mx-auto flex flex-col-reverse md:flex-row items-start justify-between gap-10 py-10 md:py-0">
                 <div className="flex flex-col justify-start items-start">
                     <div className="border-l-[25px] h-7 pl-5  border-[#fbc102] ">
                         <p className="text-[15px] font-semibold text-[#253c56]  font-lato ">
-                            Gallery
+                            GALLERY
                         </p>
                     </div>
 

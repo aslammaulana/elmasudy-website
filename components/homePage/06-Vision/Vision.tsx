@@ -7,9 +7,9 @@ const Vision = () => {
 
 
     return (
-        <section className="relative w-full px-5 py-10 text-white overflow-hidden mt-20">
+        <section className="relative w-full px-5 py-8 text-white overflow-hidden mt-0">
             {/* Content */}
-            <div className="relative w-[100%] md:w-[87%] p-2 md:p-0 mx-auto flex flex-col-reverse md:flex-row items-start justify-between gap-10 py-10 md:py-0">
+            <div className="relative w-[100%] md:w-[87%] p-2 md:p-0 mx-auto flex flex-col md:flex-row items-start justify-between gap-10 py-10 md:py-0">
 
                 {/* Kolom Kiri */}
                 <div className="flex justify-center items-center basis-1/2 ">
@@ -19,7 +19,7 @@ const Vision = () => {
                             alt="Elmasudy Hero"
                             width={600}
                             height={600}
-                            className="object-contain w-auto max-w-[100%] md:max-w-[100%] h-auto pr-10"
+                            className="object-contain w-auto max-w-[100%] md:max-w-[100%] h-auto mb-10 md:mb-0 pr-0 md:pr-10"
                             priority
                         />
                     </div>
