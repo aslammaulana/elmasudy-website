@@ -6,6 +6,7 @@ import ProgramSection from '@/components/homePage/04-ProgramSekolah/Program'
 import AboutUs from '@/components/homePage/05-AboutUs/AboutUs'
 import Vision from '@/components/homePage/06-Vision/Vision'
 import Gallery from '@/components/homePage/07-Gallery/Gallery'
+import MitraKami from '@/components/homePage/08-Mitra/MitraKami'
 import Footer from '@/components/layoutPage/Footer/Footer'
 import Navbar from '@/components/layoutPage/Navbar/Navbar'
 import React from 'react'
@@ -24,6 +25,7 @@ export default function page() {
       <AboutUs />
       <Vision />
       <Gallery />
+      <MitraKami/>
       <Footer/>
     </div>
   )

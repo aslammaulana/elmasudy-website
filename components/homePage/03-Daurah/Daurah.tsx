@@ -34,7 +34,7 @@ export default function DaurahSection() {
             key={i}
             className="bg-white shadow-[0_0_25px_-2px_rgba(101,101,101,0.18)] hover:shadow-[0_0_25px_-2px_rgba(101,101,101,0.45)] pb-5 relative w-full "
           >
-            <div className="h-20 w-full bg-[linear-gradient(148deg,#4b7aaa,#afc5dc)] relative">
+            <div className="h-15 md:h-20 w-full bg-[linear-gradient(148deg,#4b7aaa,#afc5dc)] relative">
               <div className="absolute left-6 -bottom-8 w-15 h-15 md:w-18 md:h-18 border-2 border-[#4777a8] bg-white rounded-full flex items-center justify-center">
                 <Image
                   src={item.img}
